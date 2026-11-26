@@ -1,0 +1,27 @@
+# go-base 启动配置模板
+# 复制为 config.yaml 后按需修改：config.yaml 不纳入 git 版本管理。
+
+# 调试模式，true 时日志级别为 debug，同时开启 gorm 的 SQL 日志
+debug: false
+
+# 服务
+port: 8080
+# 接口前缀，为空时默认 /api/v1；填 "xxx" 则为 /xxx/api/v1
+base_url: ""
+
+# Redis
+redis_address: "127.0.0.1:6379"
+redis_password: ""
+redis_db: 0
+
+# MySQL
+mysql_address: "127.0.0.1:3306"
+mysql_user: ""
+mysql_password: ""
+mysql_database: ""
+
+# 日志服务器，logger_address 与 logger_namespace 要么都填，要么都不填
+logger_address: ""
+logger_namespace: ""
+logger_password: ""
+logger_prefix: "go-base-daemon"

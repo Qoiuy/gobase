@@ -1,0 +1,24 @@
+# 编辑器 / 系统文件
+.idea
+.DS_Store
+
+# 前端依赖
+frontend/videopui/node_modules
+ui/node_modules
+
+# 运行时产物与本地数据
+log
+data
+conf
+backend/tools/pyMuPDF/env/
+
+# 本地配置，只提交 config.example.yaml
+config.yaml
+config.local.yaml
+backend/mistakeminer/conf.yaml
+
+# Go 构建与测试产物
+*.exe
+*.test
+*.out
+coverage.*
